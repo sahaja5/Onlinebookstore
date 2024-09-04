@@ -1,0 +1,27 @@
+<h1> Please  LOGIN </h1>
+<div>
+    <form #userform="ngForm"  (submit)="userdeatils(userform.value)">
+ 
+        <div class="form-inline">
+            <label>User Name :</label>
+        <input type="text" class="form-control" required ngModel #username="ngModel" name="username">
+       <br>
+        <span style="color: red;" *ngIf="username.invalid && username.touched"> please fill the name </span>
+        </div>
+ 
+        <div class="form-inline">
+           
+            <label>User Pass :</label>
+            <input type="text" class="form-control" required ngModel #userpass="ngModel" name="userpass">
+            <br>
+        <span style="color: red;" *ngIf="userpass.invalid && userpass.touched"> please fill the Password </span>
+     
+        </div>
+ 
+        <div>
+            <input type="submit" class="btn btn-success">
+            <input type="reset" class="btn btn-danger">
+ 
+        </div>
+    </form>
+</div>

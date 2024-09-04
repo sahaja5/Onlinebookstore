@@ -1,0 +1,22 @@
+<h1> 
+    Myname is {{name}} 
+</h1>
+<input type="submit" click="abc()">
+<h2>
+    <input type="text"  #myuser>
+    <input type="submit" (click)="username(myuser.value)">
+</h2>
+<h3>
+    Principle:<input type="text" #p><br>
+    Time:<input type="text" #t><br>
+    Roi:<input type="text" #r value={{roi}}><br>
+    Total:<input type="text" value={{total}}><br>
+    <select (change)="myloan($event)">
+        <option>loan</option>
+        <option>car</option>
+        <option>home</option>
+        <option>edu</option>
+        <option>gold</option>
+    </select>
+    <input type="submit" (click)="cal(p.value,t.value,r.value)">
+</h3>

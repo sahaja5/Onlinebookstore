@@ -1,0 +1,22 @@
+<div *ngIf="true" >
+ 
+        EY INDIA
+</div>
+<div *ngIf="xyz" >
+ 
+    EY INDIA
+
+</div>
+<hr>
+<ul *ngFor="let employees of emp">
+    <li> {{employees}} </li>
+</ul>
+<input type="text" #insertfruit>
+<input type="submit" (click)="addFruit(insertfruit.value)">
+<ul *ngFor="let fru of fruits">
+    <li>{{fru}}</li>
+</ul>
+<hr>
+<ul *ngFor="let eyemployees of eyemp">
+    <li> {{eyemployees.UID}}----{{eyemployees.NAME}} </li>
+</ul>

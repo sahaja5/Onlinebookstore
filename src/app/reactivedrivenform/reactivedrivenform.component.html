@@ -1,0 +1,12 @@
+<div>
+    <form [formGroup]="student" (ngSubmit)="myinfo(student.value)">
+        <h3>
+            firstname:<input type="text" formControlName="firstname">
+            lastname:<input type="text" formControlName="lastname">
+            userage:<input type="text" formControlName="age">
+            <input type="submit" value="Register" [disabled]="student.invalid">
+            <input type="reset" value="Reset">
+
+        </h3>
+    </form>
+</div>

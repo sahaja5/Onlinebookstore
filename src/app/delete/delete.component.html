@@ -1,0 +1,24 @@
+<!--<div>
+   <form #adduser="ngForm">    
+    <div class="form-group">
+        <label for="id"> Enter ID to Delete   : </label>
+        <input type="text" class="form-control" id="id"  required name="BookID" [(ngModel)]="books.id" #id>
+      </div>
+    
+    </form> 
+      <button type="button" class="btn btn-success" (click)="delete(id.value)" >Delete </button>
+    </div>-->
+    <div>
+      <form #adduser="ngForm" >
+       
+      <div class="form-group">
+          <label for="id"> Enter ID to Delete   : </label>
+          <input type="text" class="form-control" id="id" required [(ngModel)]="books.id" name="id" #uid>
+        </div>
+     
+     
+        <button type="button" class="btn btn-success" (click)="deleteuser(uid.value)">Delete </button>
+      </form>
+      </div>
+   
+
